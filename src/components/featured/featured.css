@@ -1,0 +1,21 @@
+/* *{
+    border: 1px dashed red;
+} */
+
+.featured {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.featuredItem {
+    max-width: 160px;
+}
+
+.featuredImg {
+    width: 100%;
+    max-width: 160px;
+    object-fit: cover;
+}

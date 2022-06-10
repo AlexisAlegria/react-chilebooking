@@ -1,8 +1,22 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom"
+import Home from "../src/pages/home/Home"
+import List from "../src/pages/list/List"
+import Hotel from "../src/pages/hotel/Hotel"
+
 function App() {
   return (
-    <div>
-      Hello world!
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/hotels" element={<List/>} />
+        <Route path="/hotels/:id" element={<Hotel/>} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
