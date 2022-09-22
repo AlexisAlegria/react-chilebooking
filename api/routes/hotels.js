@@ -8,7 +8,6 @@ import {
     countByCity, 
     countByType 
 } from '../controllers/hotel.js'
-import { createError } from '../utils/error.js'
 import { verifyAdmin } from '../utils/verifyToken.js'
 
 const router = express.Router()
